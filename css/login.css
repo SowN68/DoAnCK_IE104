@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff !important;
+}
+h3 {
+  text-align: center;
+}
+button,
+input {
+  overflow: visible;
+}
+.login-box {
+  width: 1100px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #cccc;
+  border-radius: 10px;
+  margin-top: 100px;
+  padding: 32px;
+}
+.img-bg {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bolder;
+  color: #666;
+}
+.logo img {
+  width: 80px;
+  padding-right: 8px;
+  color: #ff3838;
+}
+.tcontent {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tcontent .tform h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  padding-bottom: 75px;
+}
+.tcontent .tform_field {
+  display: flex;
+  justify-content: center;
+}
+.tcontent .tform_field .form_input {
+  width: 400px;
+  height: 35px;
+  border: 1px solid #607d8b;
+  text-transform: none !important;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+.tcontent .tform_field #login_password {
+  margin-bottom: 7px;
+}
+.tcontent .pw-forgot a {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.tcontent .aler-login {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}
+.tcontent .btn {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.tcontent .btn .btn-login {
+  height: 40px;
+  font-size: 25px;
+  background-color: #ff3838;
+  color: white;
+  border-radius: 7px;
+}
+.row.no-gutters {
+  position: relative;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  border-top: 1px solid #707070;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+.col-auto p {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+  line-height: 1.2;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.tcontent .icon-login {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon-login a img {
+  width: 40px;
+  height: 40px;
+  margin: 16px;
+}
+.tcontent .signup {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+}

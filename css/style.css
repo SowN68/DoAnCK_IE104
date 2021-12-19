@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+:root {
+  --red: #d80001;
+}
+body {
+  width: 100%;
+}
+/*-----HEADER-----*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px 9%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+header .navbar .active-menu {
+  color: var(--red);
+}
+header .logo {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #666;
+}
+
+header .logo img {
+  width: 40px;
+  height: 30px;
+  padding-right: 8px;
+  color: var(--red);
+}
+
+header .navbar a {
+  font-size: 28px;
+  margin-left: 28px;
+  color: #666;
+}
+
+header .navbar a:hover {
+  color: var(--red);
+}
+#menu-bar {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #666;
+  border: 1.6px solid #666;
+  border-radius: 0.3rem;
+  padding: 8px 24px;
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+}
+#home {
+  height: 75px;
+}
+/*-----BANNER-----*/
+.banner {
+  width: 100%;
+  height: auto;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 90vh;
+  align-items: center;
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*-----FOOTER-----*/
+.tfooter {
+  width: 100%;
+  float: left;
+  margin: 30px 0 0 0;
+}
+.tfooter .container {
+  position: relative;
+}
+.tfooter .line {
+  position: absolute;
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: #cccccc;
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+.tfooter ul,
+.tfooter ul li {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+.tfooter ul li,
+.tfooter ul li a {
+  color: #444444;
+
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 2;
+  width: 100%;
+  float: left;
+}
+.tfooter ul li.parent,
+.tfooter ul li.parent a {
+  margin: 8px 0;
+}
+.tfooter .end {
+  width: 100%;
+  float: left;
+  height: 48px;
+  background-color: #191919;
+  margin: 16px 0 0 0;
+}
+
+.tfooter .flags {
+  width: 32px;
+  height: auto;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+.tfooter .social {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 32px;
+  padding: 8px 24px;
+  font-size: 48px;
+  background: var(--red);
+  color: #fff;
+  border-radius: 8px;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 192px);
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}

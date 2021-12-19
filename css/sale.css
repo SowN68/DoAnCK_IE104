@@ -1,0 +1,27 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+}
+a{
+            text-decoration: none;
+}
+.sales-list{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
+.sales-item{
+            width: 1000px;
+            height: 300px;
+}
+.title-combo{
+            text-align: center;
+}
+.span-99k{
+            font-size: 50px;
+}
