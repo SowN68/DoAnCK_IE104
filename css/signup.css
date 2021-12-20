@@ -54,7 +54,7 @@
   .custom-control
   .custom-control-input:checked
   ~ .custom-control-label::after {
-  background-image: url("/images/icon/radio_check.png") !important;
+  background-image: url("../images/icon/radio_check.png") !important;
   background-size: 60%;
   background-position: center;
 }
