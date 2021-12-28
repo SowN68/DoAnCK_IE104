@@ -27,6 +27,9 @@
 }
 
 /*-----MENU PRODUCT-----*/
+.menu-items{
+            margin-top: 45px;
+}
 .menu-items .menu-lists .menu-details {
   color: #d80001;
   font-size: 36px;
@@ -94,7 +97,7 @@
 /*-----COUNTDOWN TIMER-----*/
 .sales-time {
   position: absolute;
-  right: 30px;
+  right: 25px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -102,6 +105,7 @@
   width: 400px;
   height: 40px;
   color: white;
+  margin-top: 15px;
 }
 .sales-time p {
   text-transform: uppercase;
