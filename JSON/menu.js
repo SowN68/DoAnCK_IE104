@@ -37,3 +37,32 @@ document.getElementById('nav-drink').addEventListener('click', () => {
             hideAllMenu(document.getElementById('drink'))
             document.querySelector('#nav-drink').classList.add("active")
 });
+
+//COUNTDOWN TIMER       
+var countDownDate = new Date("Dec 30, 2021 23:59:59").getTime();
+
+var time = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+            var day = document.getElementById("day");
+            var hour = document.getElementById("hour");
+            var min = document.getElementById("min");
+            var sec = document.getElementById("sec");
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, "0");
+  var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,"0");
+  var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, "0");
+            day.innerText = days + "d";
+            hour.innerText = `${hours}`;
+            min.innerText = `${minutes}`;
+            sec.innerText = `${seconds}`;
+  //document.getElementById("countdown-timer").innerHTML = days + "d " + hours + " : "
+  + minutes + " : " + seconds;
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
