@@ -38,6 +38,9 @@
   float: left;
   margin: 30px 0 30px 0;
 }
+#burger .name-food{
+            font-weight: bold;
+}
 .menu-lists .menu-product {
   position: relative;
   display: flex;

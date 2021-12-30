@@ -56,10 +56,8 @@ var time = setInterval(function () {
   var minutes = String(
     Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
   ).padStart(2, "0");
-  var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(
-    2,
-    "0"
-  );
+  var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)
+  ).padStart(2, "0");
   day.innerText = days + "d";
   hour.innerText = `${hours}`;
   min.innerText = `${minutes}`;
