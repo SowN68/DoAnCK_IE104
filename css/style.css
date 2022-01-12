@@ -45,13 +45,28 @@ header .logo img {
   padding-right: 8px;
   color: var(--red);
 }
-
 header .navbar a {
   font-size: 28px;
   margin-left: 28px;
   color: #666;
 }
+header .logo {
+  height: 40px;
+  position: relative;
+  display: inline-block;
+}
+header .logo #temp2 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
 
+header .logo:hover #temp2 {
+  display: block;
+}
 header .navbar a:hover {
   color: var(--red);
 }
