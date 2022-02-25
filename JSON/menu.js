@@ -39,7 +39,7 @@ document.getElementById("nav-drink").addEventListener("click", () => {
 });
 
 //COUNTDOWN TIMER
-var countDownDate = new Date("Dec 30, 2021 23:59:59").getTime();
+var countDownDate = new Date("Feb 27, 2022 23:59:59").getTime();
 
 var time = setInterval(function () {
   var now = new Date().getTime();
